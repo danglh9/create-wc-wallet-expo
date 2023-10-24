@@ -2,6 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import EIP155Lib from "./EIP155Lib";
 
 export let wallet1: EIP155Lib;
+export let wallet: EIP155Lib;
 export let wallet2: EIP155Lib;
 export let eip155Wallets: Record<string, EIP155Lib>;
 export let eip155Addresses: string[];
@@ -33,6 +34,11 @@ export const getLocalStorage = async () => {
     console.log("getLocalStorage Error:", e);
   }
 };
+
+export async function restoreEIP155Wallet({ mnemonic: mnemonic1 }) {
+  wallet = EIP155Lib.init({ mnemonic: mnemonic1 });
+  return wallet;
+}
 
 // Function to create or restore a wallet
 export async function createOrRestoreEIP155Wallet() {

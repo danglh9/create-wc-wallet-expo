@@ -19,7 +19,7 @@ async function createWeb3Wallet() {
 
   // HardCoding it here for ease of tutorial
   // Paste your project ID here
-  const ENV_PROJECT_ID = "XXX";
+  const ENV_PROJECT_ID = "b59ba34134112c929699db11fc4b7a3e";
   const core = new Core({
     projectId: ENV_PROJECT_ID,
   });

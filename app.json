@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "create-wc-wallet",
-    "slug": "create-wc-wallet",
+    "name": "x9wallet",
+    "slug": "x9wallet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teza8899x.x9wallet",
+      // "runtimeVersion": "1.0.1"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "runtimeVersion": {
+        "policy": "sdkVersion"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f523a2f8-1d00-454f-a9b2-fe84464baa07"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f523a2f8-1d00-454f-a9b2-fe84464baa07"
     }
   }
 }

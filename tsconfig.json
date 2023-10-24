@@ -3,8 +3,25 @@
   "compilerOptions": {
     "jsx": "react",
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
     /* Completeness */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "paths": {
+      "react": [
+        "./node_modules/@types/react"
+      ]
+    }
+  },
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "include": [
+    "src/**/*",
+    "src/static/optional.d.ts",
+    "declarations.d.ts"
+  ],
+  // "files": [
+  //   "svg.d.ts"
+  // ]
+  // "include": [
+  //   "svg.d.ts"
+  // ]
 }
